@@ -14,16 +14,29 @@
     <a href="program.html">Workout Program</a>
     <a href="checkin.html">Check-In</a>
     <a href="videos.html">Video Library</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="nutrition.html">Nutrition</a>
   </nav>
 </header>
 <main>
   <section>
     <h2>Welcome to FractalFit</h2>
-    <p>Your personal training companion for Fractalum. Use the navigation above to access your workout program, check-in, and exercise video library.</p>
+    <p>Your personal training companion for Fractalum. Use the navigation above to access your workout program, check-in, exercise video library, calendar, and nutrition resources.</p>
+    <div id="tip-of-day"></div>
   </section>
 </main>
 <footer>
   <p>&copy; 2025 FractalFit</p>
 </footer>
+<script>
+const tips = [
+  "Stay hydrated and drink water throughout the day.",
+  "Consistency is key; small steps lead to big changes.",
+  "Balance your workouts with rest and recovery.",
+  "Focus on form to prevent injuries."
+];
+const randomTip = tips[Math.floor(Math.random() * tips.length)];
+document.getElementById('tip-of-day').innerText = "Tip of the Day: " + randomTip;
+</script>
 </body>
 </html>
