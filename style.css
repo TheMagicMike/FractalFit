@@ -78,3 +78,35 @@ table.calendar th {
 table.calendar tr:nth-child(even) {
     background-color: #0d0d0d;
 }
+
+/* Fractal background image */
+body {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAABFElEQVR4nKWUoVLEMBCGv3QqIiIiIxEI5EkEopIHQCArTiDvAU4gEEjkCURlH+MEEoFEnEBGRlREIpYJvTTtwHTVZpPv3z/dTJVBMx8GPRDndtUUXpDLhM7gZRdTieq/5PjkT+e0nkrM3XkgnnUeSxj0hot3nh12zlSdYam5w77y4AlpK7Ng0FVmVYRamp6dSNxx/cR98UZ1yhzWYSVvaVK9pdnTFweuDPoSJw1faB32jc8brrJzDY8DMZ9zoCt+jHFsOZzwQo75VZ1rERuIDrunl2oGp3oWv3P2hA++TnhP6Dimesfxlk3xqSgxXJxzz84TthzE2pSvku1Uklwwh50jB+Kqt60WsIUQxSpb/51k5Z/kG3hxbIRjnArfAAAAAElFTkSuQmCC') repeat;
+    background-size: contain;
+}
+
+/* Fractal background image override */
+body {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAABFElEQVR4nKWUoVLEMBCGv3QqIiIiIxEI5EkEopIHQCArTiDvAU4gEEjkCURlH+MEEoFEnEBGRlREIpYJvTTtwHTVZpPv3z/dTJVBMx8GPRDndtUUXpDLhM7gZRdTieq/5PjkT+e0nkrM3XkgnnUeSxj0hot3nh12zlSdYam5w77y4AlpK7Ng0FVmVYRamp6dSNxx/cR98UZ1yhzWYSVvaVK9pdnTFweuDPoSJw1faB32jc8brrJzDY8DMZ9zoCt+jHFsOZzwQo75VZ1rERuIDrunl2oGp3oWv3P2hA++TnhP6Dimesfxlk3xqSgxXJxzz84TthzE2pSvku1Uklwwh50jB+Kqt60WsIUQxSpb/51k5Z/kG3hxbIRjnArfAAAAAElFTkSuQmCC') repeat;
+    background-size: contain;
+}
+
+/* Button styles for 3D look and effects */
+nav a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #222;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+nav a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+nav a:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    background-image: radial-gradient(circle at center, #330000, #000000);
+}
