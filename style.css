@@ -37,3 +37,39 @@ footer {
   background-color: #0d0d0d;
   color: #777;
 }
+
+/* Layout improvements */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #111;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Calendar table styling */
+table.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.calendar th,
+table.calendar td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+table.calendar th {
+    background-color: #1a1a1a;
+}
+
+table.calendar tr:nth-child(even) {
+    background-color: #0d0d0d;
+}
