@@ -58,6 +58,11 @@ table.calendar {
     border-collapse: collapse;
     margin-top: 20px;
 }
+/* Fractal-inspired background */
+body {
+    background: radial-gradient(circle at top left, #330000, #000000);
+}
+
 
 table.calendar th,
 table.calendar td {
